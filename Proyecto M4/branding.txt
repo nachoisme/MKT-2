@@ -1,0 +1,18 @@
+#1e035f (violetas)
+#042f4f (azul petroleo)
+#56124b (morado)
+#965308(ocre)
+#004225 (verde ingles)
+#635A24 (marron lodoso)
+
+
+
+
+
+
+
+
+
+#00ff88 (verde titulos)
+
+#00cc6a

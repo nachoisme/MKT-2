@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+  margin: -1px;
+  padding: -1px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
+  min-height: 100vh;
+  background-image: url('mkt.png');
+  background-repeat: no-repeat;
+  background-size: cover;     
+  background-position: center center; 
+  background-attachment: fixed; 
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #000d;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ff88;
+  letter-spacing: 2px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+.nav-menu a:hover,
+.nav-menu a:focus {
+  color: #00ff88;
+  background: #222;
+}
+
+.contact-btn, .consult-btn, .start-btn {
+  background-color: #00ff88;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 6px 0 rgba(0,255,136,0.08);
+}
+.contact-btn:hover, .contact-btn:focus,
+.consult-btn:hover, .consult-btn:focus,
+.start-btn:hover, .start-btn:focus {
+  background-color: #00cc6a;
+  color: #00ccff;
+  box-shadow: 0 4px 12px 0 rgba(0,255,136,0.13);
+}
+
+.search-icon {
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 8px;
+  background: none;
+  border: none;
+  color: #00ff88;
+  transition: color 0.2s;
+}
+.search-icon:hover,
+.search-icon:focus {
+  color: #fff;
+}
+
+.hero {
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  background: linear-gradient(180deg, #111a 40%, transparent 100%);
+}
+
+.small-heading {
+  font-size: 16px;
+  color: #ccc;
+  letter-spacing: 1px;
+}
+
+.hero-center h1 {
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 1px 2px 12px #00ff8830;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+}
+
+.service-box {
+  background-color: #222e;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  min-width: 220px;
+  margin: 0 8px 16px 8px;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.service-box:hover,
+.service-box:focus-within {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 4px 16px 0 rgba(0,255,136,0.13);
+}
+
+.service-box h3 {
+  color: #00ff88;
+  margin-bottom: 10px;
+}
+.service-ideas h3 {
+  color: #880606;
+}
+.service-solutions h3 {
+  color: #00ff0d;
+}
+.service-ED h3 {
+  color: #ffd500;
+}
+.service-RS h3 {
+  color: #00ffff;
+}
+.service-CD h3 {
+  color: #ff8800;
+}
+.service-EM h3 {
+  color: #af1095;
+}
+
+
+.it {
+  display: flex;
+  flex-direction: row; /* opcional, es por defecto */
+  flex-wrap: wrap; /* permite que los divs pasen a otra línea si no caben */
+  gap: 20px; /* espacio entre los divs */
+  justify-content: space-between; /* o center, start, etc. */
+}
+.it > div {
+  flex: 1 1 30%; /* cada div ocupará aproximadamente el 30% del ancho, ajustable */
+  box-sizing: border-box;
+}
+
+.it > div:hover, .it > div:focus-within {
+  box-shadow: 0 4px 16px 0 rgba(0,255,136,0.12);
+  transform: translateY(-3px) scale(1.01);
+}
+
+
+.it-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  display: inline-block;
+  margin-bottom: 0.2em;
+}
+.ideas-color { color: #880606; }
+.solutions-color { color: #00ff0d; }
+.strategies-color { color: #ffd500; }
+.socialmedia-color { color: #00ffff;}
+.design-color { color: #ff8800; }
+.conections-color { color: #af1095; }
+
+.ideas-box {
+  color: #880606;
+  background-image: url('image.png');
+   background-size: cover;
+  background-position: center;
+}
+.solutions-box {
+  color: #00ff0d;
+  background-image: url('slt.mkt.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.strategies-box {
+  color: #ffd500;
+  background-image: url('strtg.png');
+  background-size: cover;
+  background-position: center;
+}
+.socialmedia-box {
+  color: #00ffff;
+  background-image: url('slmda.mkt.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.design-box {
+  color: #ff8800;
+  background-image: url('dsn.mkt.png');
+  background-size: cover;
+  background-position: center;
+}
+.conections-box {
+  color: #af1095;
+  background-image: url('cnts.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #000b;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #111d;
+  color: #ccc;
+  padding: 40px;
+}
+
+.footer-left h3 {
+  font-size: 24px;
+  color: #00ff88;
+  margin-bottom: 20px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-columns h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-columns p {
+  font-size: 14px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-columns {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  .hero {
+    padding: 32px 10px;
+  }
+  .it {
+    flex-direction: column;
+    padding: 20px;
+    gap: 16px;
+  }
+  .it > div {
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+  }
+}
+
+:focus {
+  outline: 2px solid #00ff88;
+  outline-offset: 2px;
+}
+.a, .b, .c, .d, .e, .f {
+  display: block;
+  text-align: center;
+}
+.u, .v, .w, .x, .y, .z{
+  text-align: center;
+}
